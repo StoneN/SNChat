@@ -1,0 +1,6 @@
+framework module Pods_SNChat {
+  umbrella header "Pods-SNChat-umbrella.h"
+
+  export *
+  module * { export * }
+}
