@@ -60,13 +60,6 @@
 			path = Application;
 			sourceTree = "<group>";
 		};
-		94677A712081FF7D008649D3 /* Base */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Base;
-			sourceTree = "<group>";
-		};
 		94F6139C2081E94100667A4A = {
 			isa = PBXGroup;
 			children = (
@@ -91,7 +84,6 @@
 				94F613AF2081E94200667A4A /* Assets.xcassets */,
 				94F613B42081E94200667A4A /* Info.plist */,
 				94677A702081FF12008649D3 /* Application */,
-				94677A712081FF7D008649D3 /* Base */,
 				94677A72208201D6008649D3 /* SNTabBarController.swift */,
 				94677A74208205D2008649D3 /* SNNavigationController.swift */,
 			);
