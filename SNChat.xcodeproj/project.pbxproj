@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		944D1E2E208794D900135D35 /* SNRecentChatTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944D1E2D208794D900135D35 /* SNRecentChatTableViewController.swift */; };
 		944D1E3220879BF500135D35 /* SNAddressBookTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944D1E3120879BF500135D35 /* SNAddressBookTableViewController.swift */; };
+		944D1E3520879FE200135D35 /* SNChatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944D1E3420879FE200135D35 /* SNChatCell.swift */; };
 		94677A73208201D6008649D3 /* SNTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94677A72208201D6008649D3 /* SNTabBarController.swift */; };
 		94F613A92081E94100667A4A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F613A82081E94100667A4A /* AppDelegate.swift */; };
 		94F613AE2081E94100667A4A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94F613AC2081E94100667A4A /* Main.storyboard */; };
@@ -21,6 +22,7 @@
 		7BED2C300887004C227009E9 /* Pods-SNChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SNChat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SNChat/Pods-SNChat.debug.xcconfig"; sourceTree = "<group>"; };
 		944D1E2D208794D900135D35 /* SNRecentChatTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNRecentChatTableViewController.swift; sourceTree = "<group>"; };
 		944D1E3120879BF500135D35 /* SNAddressBookTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNAddressBookTableViewController.swift; sourceTree = "<group>"; };
+		944D1E3420879FE200135D35 /* SNChatCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNChatCell.swift; sourceTree = "<group>"; };
 		94677A72208201D6008649D3 /* SNTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNTabBarController.swift; sourceTree = "<group>"; };
 		94F613A52081E94100667A4A /* SNChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SNChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		94F613A82081E94100667A4A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -50,6 +52,14 @@
 				ED853D374489D6F290B5C679 /* Pods_SNChat.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		944D1E3320879F8400135D35 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				944D1E3420879FE200135D35 /* SNChatCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		94677A702081FF12008649D3 /* Application */ = {
@@ -89,6 +99,7 @@
 				94677A72208201D6008649D3 /* SNTabBarController.swift */,
 				944D1E2D208794D900135D35 /* SNRecentChatTableViewController.swift */,
 				944D1E3120879BF500135D35 /* SNAddressBookTableViewController.swift */,
+				944D1E3320879F8400135D35 /* Cell */,
 			);
 			path = SNChat;
 			sourceTree = "<group>";
@@ -180,12 +191,14 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-SNChat/Pods-SNChat-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 				"${BUILT_PRODUCTS_DIR}/YYKit/YYKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -218,6 +231,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				944D1E3520879FE200135D35 /* SNChatCell.swift in Sources */,
 				944D1E2E208794D900135D35 /* SNRecentChatTableViewController.swift in Sources */,
 				94677A73208201D6008649D3 /* SNTabBarController.swift in Sources */,
 				94F613A92081E94100667A4A /* AppDelegate.swift in Sources */,
@@ -369,10 +383,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Y3TRTAH5W2;
 				INFOPLIST_FILE = SNChat/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = stonen.SNChat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -388,10 +399,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Y3TRTAH5W2;
 				INFOPLIST_FILE = SNChat/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = stonen.SNChat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;

@@ -7,6 +7,7 @@ target 'SNChat' do
   pod 'MBProgressHUD', '~> 1.1.0'
   pod 'YYKit'
   pod 'IQKeyboardManagerSwift'
+  pod 'SnapKit', '~> 4.0.0'
   # Pods for SNChat
 
 end
