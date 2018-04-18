@@ -9,13 +9,25 @@
 import UIKit
 
 class SNTabBarController: UITabBarController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.loadChildViewControllers()
         // Do any additional setup after loading the view.
     }
 
+    func loadChildViewControllers() {
+        let recentChatTableVC = SNRecentChatTableViewController()
+        let recentChatNC = UINavigationController(rootViewController: recentChatTableVC)
+        recentChatNC.tabBarItem.title = "最近会话"
+        
+        let addressBookTableVC = SNAddressBookTableViewController()
+        let addressBookNC = UINavigationController(rootViewController: addressBookTableVC)
+        addressBookNC.tabBarItem.title = "通讯录"
+        
+        self.setViewControllers([recentChatNC, addressBookNC], animated: false)
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
