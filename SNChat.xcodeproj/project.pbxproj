@@ -11,6 +11,7 @@
 		944D1E3220879BF500135D35 /* SNAddressBookTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944D1E3120879BF500135D35 /* SNAddressBookTableViewController.swift */; };
 		944D1E3520879FE200135D35 /* SNChatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944D1E3420879FE200135D35 /* SNChatCell.swift */; };
 		94677A73208201D6008649D3 /* SNTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94677A72208201D6008649D3 /* SNTabBarController.swift */; };
+		94B52F4B208AE49700BCA639 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 94B52F4A208AE49700BCA639 /* Default-568h@2x.png */; };
 		94F613A92081E94100667A4A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F613A82081E94100667A4A /* AppDelegate.swift */; };
 		94F613AE2081E94100667A4A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94F613AC2081E94100667A4A /* Main.storyboard */; };
 		94F613B02081E94200667A4A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94F613AF2081E94200667A4A /* Assets.xcassets */; };
@@ -24,6 +25,7 @@
 		944D1E3120879BF500135D35 /* SNAddressBookTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNAddressBookTableViewController.swift; sourceTree = "<group>"; };
 		944D1E3420879FE200135D35 /* SNChatCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNChatCell.swift; sourceTree = "<group>"; };
 		94677A72208201D6008649D3 /* SNTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNTabBarController.swift; sourceTree = "<group>"; };
+		94B52F4A208AE49700BCA639 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		94F613A52081E94100667A4A /* SNChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SNChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		94F613A82081E94100667A4A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		94F613AD2081E94100667A4A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -54,27 +56,89 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		944D1E3320879F8400135D35 /* Cell */ = {
+		94B52F48208AE32000BCA639 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				94677A72208201D6008649D3 /* SNTabBarController.swift */,
+				944D1E2D208794D900135D35 /* SNRecentChatTableViewController.swift */,
+				944D1E3120879BF500135D35 /* SNAddressBookTableViewController.swift */,
 				944D1E3420879FE200135D35 /* SNChatCell.swift */,
 			);
-			path = Cell;
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
-		94677A702081FF12008649D3 /* Application */ = {
+		94B52F49208AE36400BCA639 /* SupportingFiles */ = {
 			isa = PBXGroup;
 			children = (
-				94F613A82081E94100667A4A /* AppDelegate.swift */,
+				94F613B42081E94200667A4A /* Info.plist */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		94B52F4C208AE55300BCA639 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				94F613AF2081E94200667A4A /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		94B52F4D208AE56A00BCA639 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
 				94F613AC2081E94100667A4A /* Main.storyboard */,
 				94F613B12081E94200667A4A /* LaunchScreen.storyboard */,
 			);
-			path = Application;
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		94B52F4E208AE58000BCA639 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				94F613A82081E94100667A4A /* AppDelegate.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		94B52F4F208AE59200BCA639 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		94B52F50208AE5A000BCA639 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		94B52F51208AE5AC00BCA639 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		94B52F52208AE5BC00BCA639 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		94B52F53208AE5CB00BCA639 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		94F6139C2081E94100667A4A = {
 			isa = PBXGroup;
 			children = (
+				94B52F4A208AE49700BCA639 /* Default-568h@2x.png */,
 				94F613A72081E94100667A4A /* SNChat */,
 				94F613A62081E94100667A4A /* Products */,
 				9A0AD56C906DD8E1E0139252 /* Pods */,
@@ -93,13 +157,16 @@
 		94F613A72081E94100667A4A /* SNChat */ = {
 			isa = PBXGroup;
 			children = (
-				94677A702081FF12008649D3 /* Application */,
-				94F613AF2081E94200667A4A /* Assets.xcassets */,
-				94F613B42081E94200667A4A /* Info.plist */,
-				94677A72208201D6008649D3 /* SNTabBarController.swift */,
-				944D1E2D208794D900135D35 /* SNRecentChatTableViewController.swift */,
-				944D1E3120879BF500135D35 /* SNAddressBookTableViewController.swift */,
-				944D1E3320879F8400135D35 /* Cell */,
+				94B52F51208AE5AC00BCA639 /* Extensions */,
+				94B52F50208AE5A000BCA639 /* Protocols */,
+				94B52F4F208AE59200BCA639 /* Configuration */,
+				94B52F4E208AE58000BCA639 /* Delegates */,
+				94B52F52208AE5BC00BCA639 /* Manager */,
+				94B52F53208AE5CB00BCA639 /* Models */,
+				94B52F4C208AE55300BCA639 /* Resources */,
+				94B52F4D208AE56A00BCA639 /* Storyboards */,
+				94B52F49208AE36400BCA639 /* SupportingFiles */,
+				94B52F48208AE32000BCA639 /* ViewControllers */,
 			);
 			path = SNChat;
 			sourceTree = "<group>";
@@ -174,6 +241,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				94F613B32081E94200667A4A /* LaunchScreen.storyboard in Resources */,
+				94B52F4B208AE49700BCA639 /* Default-568h@2x.png in Resources */,
 				94F613B02081E94200667A4A /* Assets.xcassets in Resources */,
 				94F613AE2081E94100667A4A /* Main.storyboard in Resources */,
 			);
@@ -382,8 +450,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Y3TRTAH5W2;
-				INFOPLIST_FILE = SNChat/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				INFOPLIST_FILE = SNChat/SupportingFiles/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = stonen.SNChat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -398,8 +469,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Y3TRTAH5W2;
-				INFOPLIST_FILE = SNChat/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				INFOPLIST_FILE = SNChat/SupportingFiles/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = stonen.SNChat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
