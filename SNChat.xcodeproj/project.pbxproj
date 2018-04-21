@@ -9,9 +9,16 @@
 /* Begin PBXBuildFile section */
 		944D1E2E208794D900135D35 /* SNRecentChatTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944D1E2D208794D900135D35 /* SNRecentChatTableViewController.swift */; };
 		944D1E3220879BF500135D35 /* SNAddressBookTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944D1E3120879BF500135D35 /* SNAddressBookTableViewController.swift */; };
-		944D1E3520879FE200135D35 /* SNChatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944D1E3420879FE200135D35 /* SNChatCell.swift */; };
 		94677A73208201D6008649D3 /* SNTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94677A72208201D6008649D3 /* SNTabBarController.swift */; };
 		94B52F4B208AE49700BCA639 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 94B52F4A208AE49700BCA639 /* Default-568h@2x.png */; };
+		94B52F55208AE94500BCA639 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B52F54208AE94500BCA639 /* Configuration.swift */; };
+		94B52F59208AEFED00BCA639 /* SNChatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B52F57208AEFED00BCA639 /* SNChatCell.swift */; };
+		94B52F5A208AEFED00BCA639 /* SNChatCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 94B52F58208AEFED00BCA639 /* SNChatCell.xib */; };
+		94B52F5C208B1A2200BCA639 /* SNChatData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B52F5B208B1A2200BCA639 /* SNChatData.swift */; };
+		94B52F5F208B1CE900BCA639 /* SNChatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B52F5E208B1CE900BCA639 /* SNChatViewModel.swift */; };
+		94B52F61208B34A500BCA639 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B52F60208B34A500BCA639 /* Date.swift */; };
+		94B52F63208B4A3100BCA639 /* SNRecentChatDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B52F62208B4A3100BCA639 /* SNRecentChatDataManager.swift */; };
+		94B52F65208B808500BCA639 /* Int.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B52F64208B808500BCA639 /* Int.swift */; };
 		94F613A92081E94100667A4A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F613A82081E94100667A4A /* AppDelegate.swift */; };
 		94F613AE2081E94100667A4A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94F613AC2081E94100667A4A /* Main.storyboard */; };
 		94F613B02081E94200667A4A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94F613AF2081E94200667A4A /* Assets.xcassets */; };
@@ -23,9 +30,16 @@
 		7BED2C300887004C227009E9 /* Pods-SNChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SNChat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SNChat/Pods-SNChat.debug.xcconfig"; sourceTree = "<group>"; };
 		944D1E2D208794D900135D35 /* SNRecentChatTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNRecentChatTableViewController.swift; sourceTree = "<group>"; };
 		944D1E3120879BF500135D35 /* SNAddressBookTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNAddressBookTableViewController.swift; sourceTree = "<group>"; };
-		944D1E3420879FE200135D35 /* SNChatCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNChatCell.swift; sourceTree = "<group>"; };
 		94677A72208201D6008649D3 /* SNTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNTabBarController.swift; sourceTree = "<group>"; };
 		94B52F4A208AE49700BCA639 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		94B52F54208AE94500BCA639 /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
+		94B52F57208AEFED00BCA639 /* SNChatCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNChatCell.swift; sourceTree = "<group>"; };
+		94B52F58208AEFED00BCA639 /* SNChatCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SNChatCell.xib; sourceTree = "<group>"; };
+		94B52F5B208B1A2200BCA639 /* SNChatData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNChatData.swift; sourceTree = "<group>"; };
+		94B52F5E208B1CE900BCA639 /* SNChatViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNChatViewModel.swift; sourceTree = "<group>"; };
+		94B52F60208B34A500BCA639 /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
+		94B52F62208B4A3100BCA639 /* SNRecentChatDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNRecentChatDataManager.swift; sourceTree = "<group>"; };
+		94B52F64208B808500BCA639 /* Int.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Int.swift; sourceTree = "<group>"; };
 		94F613A52081E94100667A4A /* SNChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SNChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		94F613A82081E94100667A4A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		94F613AD2081E94100667A4A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -59,10 +73,11 @@
 		94B52F48208AE32000BCA639 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				94B52F5D208B1C9900BCA639 /* ViewModels */,
+				94B52F56208AEFC100BCA639 /* TableViewCells */,
 				94677A72208201D6008649D3 /* SNTabBarController.swift */,
 				944D1E2D208794D900135D35 /* SNRecentChatTableViewController.swift */,
 				944D1E3120879BF500135D35 /* SNAddressBookTableViewController.swift */,
-				944D1E3420879FE200135D35 /* SNChatCell.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -103,6 +118,7 @@
 		94B52F4F208AE59200BCA639 /* Configuration */ = {
 			isa = PBXGroup;
 			children = (
+				94B52F54208AE94500BCA639 /* Configuration.swift */,
 			);
 			path = Configuration;
 			sourceTree = "<group>";
@@ -117,6 +133,8 @@
 		94B52F51208AE5AC00BCA639 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				94B52F60208B34A500BCA639 /* Date.swift */,
+				94B52F64208B808500BCA639 /* Int.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -124,6 +142,7 @@
 		94B52F52208AE5BC00BCA639 /* Manager */ = {
 			isa = PBXGroup;
 			children = (
+				94B52F62208B4A3100BCA639 /* SNRecentChatDataManager.swift */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -131,8 +150,26 @@
 		94B52F53208AE5CB00BCA639 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				94B52F5B208B1A2200BCA639 /* SNChatData.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		94B52F56208AEFC100BCA639 /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				94B52F57208AEFED00BCA639 /* SNChatCell.swift */,
+				94B52F58208AEFED00BCA639 /* SNChatCell.xib */,
+			);
+			path = TableViewCells;
+			sourceTree = "<group>";
+		};
+		94B52F5D208B1C9900BCA639 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				94B52F5E208B1CE900BCA639 /* SNChatViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 		94F6139C2081E94100667A4A = {
@@ -241,6 +278,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				94F613B32081E94200667A4A /* LaunchScreen.storyboard in Resources */,
+				94B52F5A208AEFED00BCA639 /* SNChatCell.xib in Resources */,
 				94B52F4B208AE49700BCA639 /* Default-568h@2x.png in Resources */,
 				94F613B02081E94200667A4A /* Assets.xcassets in Resources */,
 				94F613AE2081E94100667A4A /* Main.storyboard in Resources */,
@@ -299,10 +337,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				944D1E3520879FE200135D35 /* SNChatCell.swift in Sources */,
+				94B52F55208AE94500BCA639 /* Configuration.swift in Sources */,
+				94B52F63208B4A3100BCA639 /* SNRecentChatDataManager.swift in Sources */,
+				94B52F5C208B1A2200BCA639 /* SNChatData.swift in Sources */,
 				944D1E2E208794D900135D35 /* SNRecentChatTableViewController.swift in Sources */,
 				94677A73208201D6008649D3 /* SNTabBarController.swift in Sources */,
 				94F613A92081E94100667A4A /* AppDelegate.swift in Sources */,
+				94B52F5F208B1CE900BCA639 /* SNChatViewModel.swift in Sources */,
+				94B52F65208B808500BCA639 /* Int.swift in Sources */,
+				94B52F59208AEFED00BCA639 /* SNChatCell.swift in Sources */,
+				94B52F61208B34A500BCA639 /* Date.swift in Sources */,
 				944D1E3220879BF500135D35 /* SNAddressBookTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

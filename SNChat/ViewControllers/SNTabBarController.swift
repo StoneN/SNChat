@@ -21,6 +21,7 @@ class SNTabBarController: UITabBarController {
         let recentChatNC = UINavigationController(rootViewController: recentChatTableVC)
         recentChatNC.tabBarItem.title = "最近会话"
         
+        
         let addressBookTableVC = SNAddressBookTableViewController()
         let addressBookNC = UINavigationController(rootViewController: addressBookTableVC)
         addressBookNC.tabBarItem.title = "通讯录"
