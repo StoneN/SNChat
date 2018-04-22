@@ -1,5 +1,5 @@
 //
-//  SNChatViewModel.swift
+//  SNRecentChatViewModel.swift
 //  SNChat
 //
 //  Created by StoneN on 2018/4/21.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-struct SNChatViewModel {
+struct SNRecentChatViewModel {
     
     let chatList: [SNChatData]
     

@@ -78,10 +78,14 @@ final class SNRecentChatDataManager {
             ],
         ]
     private func chatDataFromDict(dict: [String: Any]) -> SNChatData {
-        return SNChatData(avatar: dict["avatar"] as! String,
+        return SNChatData(type: SNChatType.personal.rawValue,
+                          avatar: dict["avatar"] as! String,
                           name: dict["name"] as! String,
                           lastMsg: dict["lastMsg"] as! String,
                           time: dict["time"] as! Date,
-                          unreadCount: dict["unreadCount"] as! Int)
+                          unreadCount: dict["unreadCount"] as! Int,
+                          userId: 19140138,
+                          lastMsgOwnerName: "",
+                          groupId: 0)
     }
 }

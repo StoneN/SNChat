@@ -10,7 +10,7 @@ import UIKit
 
 class SNRecentChatTableViewController: UITableViewController {
 
-    var viewModel: SNChatViewModel? {
+    var viewModel: SNRecentChatViewModel? {
         didSet {
             DispatchQueue.main.async { self.updateView() }
         }
@@ -26,26 +26,27 @@ class SNRecentChatTableViewController: UITableViewController {
         super.viewDidLoad()
         self.navigationItem.title = "最近会话"
         self.navigationItem.rightBarButtonItem = self.editButtonItem
-     
+        
         self.tableView!.separatorStyle = .none
         self.tableView!.register(SNChatCell.self, forCellReuseIdentifier: SNChatCell.reuseIdentifier)
     }
 
-    
     override func viewWillAppear(_ animated: Bool) {
         loadData()
     }
     
     func loadData() {
         SNRecentChatDataManager.shared.recentChatData { (chatList, _) in
-            self.viewModel = SNChatViewModel(chatList: chatList)
+            self.viewModel = SNRecentChatViewModel(chatList: chatList)
         }
     }
     
     // MARK: - Table view delegate
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let _ = Date.randomTime()
+        let next = SNChatViewController()
+        next.hidesBottomBarWhenPushed = true
+        self.navigationController?.pushViewController(next, animated: true)
     }
     
     // MARK: - Table view data source
@@ -81,7 +82,5 @@ class SNRecentChatTableViewController: UITableViewController {
         }
         return chat
     }
-
-    
     
 }

@@ -13,14 +13,25 @@
 		94B52F4B208AE49700BCA639 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 94B52F4A208AE49700BCA639 /* Default-568h@2x.png */; };
 		94B52F55208AE94500BCA639 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B52F54208AE94500BCA639 /* Configuration.swift */; };
 		94B52F5C208B1A2200BCA639 /* SNChatData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B52F5B208B1A2200BCA639 /* SNChatData.swift */; };
-		94B52F5F208B1CE900BCA639 /* SNChatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B52F5E208B1CE900BCA639 /* SNChatViewModel.swift */; };
+		94B52F5F208B1CE900BCA639 /* SNRecentChatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B52F5E208B1CE900BCA639 /* SNRecentChatViewModel.swift */; };
 		94B52F61208B34A500BCA639 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B52F60208B34A500BCA639 /* Date.swift */; };
 		94B52F63208B4A3100BCA639 /* SNRecentChatDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B52F62208B4A3100BCA639 /* SNRecentChatDataManager.swift */; };
 		94B52F65208B808500BCA639 /* Int.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B52F64208B808500BCA639 /* Int.swift */; };
+		94D4CA9D208CBD56005ABBCA /* SNChatMsgBaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D4CA9C208CBD56005ABBCA /* SNChatMsgBaseCell.swift */; };
+		94D4CAA2208CC5F8005ABBCA /* SNChatMsgBubbleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D4CAA1208CC5F8005ABBCA /* SNChatMsgBubbleCell.swift */; };
+		94D4CAA4208CC80E005ABBCA /* SNChatMsgDefine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D4CAA3208CC80E005ABBCA /* SNChatMsgDefine.swift */; };
 		94E5826D208C4ADC0027F2EB /* SNUserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E5826C208C4ADC0027F2EB /* SNUserCell.swift */; };
 		94E5826F208C66840027F2EB /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E5826E208C66840027F2EB /* UIColor.swift */; };
 		94E58271208C69520027F2EB /* SNChatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E58270208C69520027F2EB /* SNChatCell.swift */; };
 		94E58273208C74290027F2EB /* SNChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E58272208C74290027F2EB /* SNChatViewController.swift */; };
+		94E910F8208C76720077B898 /* SNChatInputPanelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E910F7208C76720077B898 /* SNChatInputPanelView.swift */; };
+		94E910FA208C7AC10077B898 /* SNChatInputPanelViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E910F9208C7AC10077B898 /* SNChatInputPanelViewDelegate.swift */; };
+		94E910FC208C80430077B898 /* SNUserBaseData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E910FB208C80420077B898 /* SNUserBaseData.swift */; };
+		94E910FE208C81720077B898 /* SNChatSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E910FD208C81720077B898 /* SNChatSession.swift */; };
+		94E91100208C8A7F0077B898 /* SNDefine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E910FF208C8A7F0077B898 /* SNDefine.swift */; };
+		94E91102208C8D3A0077B898 /* SNChatInputBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E91101208C8D3A0077B898 /* SNChatInputBarView.swift */; };
+		94E91104208C90310077B898 /* SNChatEmotionInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E91103208C90310077B898 /* SNChatEmotionInputView.swift */; };
+		94E91106208C90760077B898 /* SNChatMenuInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E91105208C90760077B898 /* SNChatMenuInputView.swift */; };
 		94F613A92081E94100667A4A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F613A82081E94100667A4A /* AppDelegate.swift */; };
 		94F613AE2081E94100667A4A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94F613AC2081E94100667A4A /* Main.storyboard */; };
 		94F613B02081E94200667A4A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94F613AF2081E94200667A4A /* Assets.xcassets */; };
@@ -36,14 +47,25 @@
 		94B52F4A208AE49700BCA639 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		94B52F54208AE94500BCA639 /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
 		94B52F5B208B1A2200BCA639 /* SNChatData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNChatData.swift; sourceTree = "<group>"; };
-		94B52F5E208B1CE900BCA639 /* SNChatViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNChatViewModel.swift; sourceTree = "<group>"; };
+		94B52F5E208B1CE900BCA639 /* SNRecentChatViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNRecentChatViewModel.swift; sourceTree = "<group>"; };
 		94B52F60208B34A500BCA639 /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 		94B52F62208B4A3100BCA639 /* SNRecentChatDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNRecentChatDataManager.swift; sourceTree = "<group>"; };
 		94B52F64208B808500BCA639 /* Int.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Int.swift; sourceTree = "<group>"; };
+		94D4CA9C208CBD56005ABBCA /* SNChatMsgBaseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNChatMsgBaseCell.swift; sourceTree = "<group>"; };
+		94D4CAA1208CC5F8005ABBCA /* SNChatMsgBubbleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNChatMsgBubbleCell.swift; sourceTree = "<group>"; };
+		94D4CAA3208CC80E005ABBCA /* SNChatMsgDefine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNChatMsgDefine.swift; sourceTree = "<group>"; };
 		94E5826C208C4ADC0027F2EB /* SNUserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNUserCell.swift; sourceTree = "<group>"; };
 		94E5826E208C66840027F2EB /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		94E58270208C69520027F2EB /* SNChatCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNChatCell.swift; sourceTree = "<group>"; };
 		94E58272208C74290027F2EB /* SNChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNChatViewController.swift; sourceTree = "<group>"; };
+		94E910F7208C76720077B898 /* SNChatInputPanelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNChatInputPanelView.swift; sourceTree = "<group>"; };
+		94E910F9208C7AC10077B898 /* SNChatInputPanelViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNChatInputPanelViewDelegate.swift; sourceTree = "<group>"; };
+		94E910FB208C80420077B898 /* SNUserBaseData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNUserBaseData.swift; sourceTree = "<group>"; };
+		94E910FD208C81720077B898 /* SNChatSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNChatSession.swift; sourceTree = "<group>"; };
+		94E910FF208C8A7F0077B898 /* SNDefine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNDefine.swift; sourceTree = "<group>"; };
+		94E91101208C8D3A0077B898 /* SNChatInputBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNChatInputBarView.swift; sourceTree = "<group>"; };
+		94E91103208C90310077B898 /* SNChatEmotionInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNChatEmotionInputView.swift; sourceTree = "<group>"; };
+		94E91105208C90760077B898 /* SNChatMenuInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNChatMenuInputView.swift; sourceTree = "<group>"; };
 		94F613A52081E94100667A4A /* SNChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SNChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		94F613A82081E94100667A4A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		94F613AD2081E94100667A4A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -77,6 +99,7 @@
 		94B52F48208AE32000BCA639 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				94E910FF208C8A7F0077B898 /* SNDefine.swift */,
 				94E58274208C746C0027F2EB /* RootViewControllers */,
 				94E58272208C74290027F2EB /* SNChatViewController.swift */,
 			);
@@ -112,6 +135,7 @@
 			isa = PBXGroup;
 			children = (
 				94F613A82081E94100667A4A /* AppDelegate.swift */,
+				94E910F9208C7AC10077B898 /* SNChatInputPanelViewDelegate.swift */,
 			);
 			path = Delegates;
 			sourceTree = "<group>";
@@ -153,6 +177,8 @@
 			isa = PBXGroup;
 			children = (
 				94B52F5B208B1A2200BCA639 /* SNChatData.swift */,
+				94E910FB208C80420077B898 /* SNUserBaseData.swift */,
+				94E910FD208C81720077B898 /* SNChatSession.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -162,6 +188,7 @@
 			children = (
 				94E5826C208C4ADC0027F2EB /* SNUserCell.swift */,
 				94E58270208C69520027F2EB /* SNChatCell.swift */,
+				94D4CA9E208CBD5D005ABBCA /* MessageCells */,
 			);
 			path = TableViewCells;
 			sourceTree = "<group>";
@@ -169,9 +196,19 @@
 		94B52F5D208B1C9900BCA639 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				94B52F5E208B1CE900BCA639 /* SNChatViewModel.swift */,
+				94B52F5E208B1CE900BCA639 /* SNRecentChatViewModel.swift */,
 			);
 			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		94D4CA9E208CBD5D005ABBCA /* MessageCells */ = {
+			isa = PBXGroup;
+			children = (
+				94D4CAA3208CC80E005ABBCA /* SNChatMsgDefine.swift */,
+				94D4CA9C208CBD56005ABBCA /* SNChatMsgBaseCell.swift */,
+				94D4CAA1208CC5F8005ABBCA /* SNChatMsgBubbleCell.swift */,
+			);
+			path = MessageCells;
 			sourceTree = "<group>";
 		};
 		94E58274208C746C0027F2EB /* RootViewControllers */ = {
@@ -181,9 +218,19 @@
 				944D1E2D208794D900135D35 /* SNRecentChatTableViewController.swift */,
 				944D1E3120879BF500135D35 /* SNAddressBookTableViewController.swift */,
 				94B52F5D208B1C9900BCA639 /* ViewModels */,
-				94B52F56208AEFC100BCA639 /* TableViewCells */,
 			);
 			path = RootViewControllers;
+			sourceTree = "<group>";
+		};
+		94E58275208C75600027F2EB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				94E910F7208C76720077B898 /* SNChatInputPanelView.swift */,
+				94E91101208C8D3A0077B898 /* SNChatInputBarView.swift */,
+				94E91103208C90310077B898 /* SNChatEmotionInputView.swift */,
+				94E91105208C90760077B898 /* SNChatMenuInputView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		94F6139C2081E94100667A4A = {
@@ -218,6 +265,8 @@
 				94B52F4D208AE56A00BCA639 /* Storyboards */,
 				94B52F49208AE36400BCA639 /* SupportingFiles */,
 				94B52F48208AE32000BCA639 /* ViewControllers */,
+				94B52F56208AEFC100BCA639 /* TableViewCells */,
+				94E58275208C75600027F2EB /* Views */,
 			);
 			path = SNChat;
 			sourceTree = "<group>";
@@ -352,18 +401,29 @@
 			files = (
 				94B52F55208AE94500BCA639 /* Configuration.swift in Sources */,
 				94B52F63208B4A3100BCA639 /* SNRecentChatDataManager.swift in Sources */,
+				94E91104208C90310077B898 /* SNChatEmotionInputView.swift in Sources */,
+				94E91100208C8A7F0077B898 /* SNDefine.swift in Sources */,
 				94B52F5C208B1A2200BCA639 /* SNChatData.swift in Sources */,
 				944D1E2E208794D900135D35 /* SNRecentChatTableViewController.swift in Sources */,
+				94E910FA208C7AC10077B898 /* SNChatInputPanelViewDelegate.swift in Sources */,
 				94677A73208201D6008649D3 /* SNTabBarController.swift in Sources */,
 				94F613A92081E94100667A4A /* AppDelegate.swift in Sources */,
-				94B52F5F208B1CE900BCA639 /* SNChatViewModel.swift in Sources */,
+				94E91106208C90760077B898 /* SNChatMenuInputView.swift in Sources */,
+				94E91102208C8D3A0077B898 /* SNChatInputBarView.swift in Sources */,
+				94B52F5F208B1CE900BCA639 /* SNRecentChatViewModel.swift in Sources */,
+				94E910F8208C76720077B898 /* SNChatInputPanelView.swift in Sources */,
 				94E58273208C74290027F2EB /* SNChatViewController.swift in Sources */,
+				94E910FC208C80430077B898 /* SNUserBaseData.swift in Sources */,
+				94D4CAA4208CC80E005ABBCA /* SNChatMsgDefine.swift in Sources */,
 				94E5826D208C4ADC0027F2EB /* SNUserCell.swift in Sources */,
+				94D4CAA2208CC5F8005ABBCA /* SNChatMsgBubbleCell.swift in Sources */,
 				94B52F65208B808500BCA639 /* Int.swift in Sources */,
+				94E910FE208C81720077B898 /* SNChatSession.swift in Sources */,
 				94E58271208C69520027F2EB /* SNChatCell.swift in Sources */,
 				94E5826F208C66840027F2EB /* UIColor.swift in Sources */,
 				94B52F61208B34A500BCA639 /* Date.swift in Sources */,
 				944D1E3220879BF500135D35 /* SNAddressBookTableViewController.swift in Sources */,
+				94D4CA9D208CBD56005ABBCA /* SNChatMsgBaseCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
