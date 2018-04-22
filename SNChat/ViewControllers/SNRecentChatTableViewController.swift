@@ -28,7 +28,7 @@ class SNRecentChatTableViewController: UITableViewController {
         self.navigationItem.rightBarButtonItem = self.editButtonItem
      
         self.tableView!.separatorStyle = .none
-        self.tableView!.register(UINib(nibName:"SNChatCell", bundle:nil),forCellReuseIdentifier:"SNChatCell")
+        self.tableView!.register(SNChatCell.self, forCellReuseIdentifier: SNChatCell.reuseIdentifier)
     }
 
     
@@ -74,6 +74,7 @@ class SNRecentChatTableViewController: UITableViewController {
         if let viewModel = viewModel {
             chat.avatar.image = viewModel.avatar(for: indexPath.row)
             chat.unreadCount.text = viewModel.unreadCountString(for: indexPath.row)
+            chat.unreadCountNumber = viewModel.unreadCountInt(for: indexPath.row)
             chat.name.text = viewModel.name(for: indexPath.row)
             chat.lastMsg.text = viewModel.lastMsg(for: indexPath.row)
             chat.time.text = viewModel.time(for: indexPath.row)

@@ -21,8 +21,8 @@ class SNUserCell: UITableViewCell {
     
     lazy var name: UILabel! = {
         let name = UILabel()
-        name.font = UIFont.systemFont(ofSize: 14)
-        name.textColor = UIColor.withHex(hexInt: 0x4a4a4a)
+        name.font = UIFont.systemFont(ofSize: 14, weight: .bold)
+        name.textColor = UIColor.black
         contentView.addSubview(name)
         return name
     }()
@@ -34,13 +34,13 @@ class SNUserCell: UITableViewCell {
         return bottomLine
     }()
     
+    // MARK: - Init
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+    }
     override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         self.initUI()
-    }
-    
-    required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
     }
     
     func initUI() {
