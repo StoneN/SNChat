@@ -83,7 +83,15 @@
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
-            <point key="canvasLocation" x="-153" y="-160"/>
+            <connections>
+                <outlet property="avatar" destination="1Bc-PP-cOl" id="FCY-3g-cfG"/>
+                <outlet property="bottomLine" destination="aWI-Nx-2QG" id="Fzn-hc-sNO"/>
+                <outlet property="lastMsg" destination="Fsg-b6-PDg" id="mWl-es-aZp"/>
+                <outlet property="name" destination="TCb-ZK-JT9" id="CRJ-R8-rlM"/>
+                <outlet property="time" destination="x7Z-mp-h1b" id="sTc-Jc-7tW"/>
+                <outlet property="unreadCount" destination="2vn-M0-tPY" id="jGP-MA-QSZ"/>
+            </connections>
+            <point key="canvasLocation" x="-102" y="-450"/>
         </tableViewCell>
     </objects>
     <resources>
