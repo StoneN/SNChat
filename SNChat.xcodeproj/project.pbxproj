@@ -19,6 +19,8 @@
 		94B52F61208B34A500BCA639 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B52F60208B34A500BCA639 /* Date.swift */; };
 		94B52F63208B4A3100BCA639 /* SNRecentChatDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B52F62208B4A3100BCA639 /* SNRecentChatDataManager.swift */; };
 		94B52F65208B808500BCA639 /* Int.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B52F64208B808500BCA639 /* Int.swift */; };
+		94E5826D208C4ADC0027F2EB /* SNUserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E5826C208C4ADC0027F2EB /* SNUserCell.swift */; };
+		94E5826F208C66840027F2EB /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E5826E208C66840027F2EB /* UIColor.swift */; };
 		94F613A92081E94100667A4A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F613A82081E94100667A4A /* AppDelegate.swift */; };
 		94F613AE2081E94100667A4A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94F613AC2081E94100667A4A /* Main.storyboard */; };
 		94F613B02081E94200667A4A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94F613AF2081E94200667A4A /* Assets.xcassets */; };
@@ -40,6 +42,8 @@
 		94B52F60208B34A500BCA639 /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 		94B52F62208B4A3100BCA639 /* SNRecentChatDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNRecentChatDataManager.swift; sourceTree = "<group>"; };
 		94B52F64208B808500BCA639 /* Int.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Int.swift; sourceTree = "<group>"; };
+		94E5826C208C4ADC0027F2EB /* SNUserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNUserCell.swift; sourceTree = "<group>"; };
+		94E5826E208C66840027F2EB /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		94F613A52081E94100667A4A /* SNChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SNChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		94F613A82081E94100667A4A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		94F613AD2081E94100667A4A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -135,6 +139,7 @@
 			children = (
 				94B52F60208B34A500BCA639 /* Date.swift */,
 				94B52F64208B808500BCA639 /* Int.swift */,
+				94E5826E208C66840027F2EB /* UIColor.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -160,6 +165,7 @@
 			children = (
 				94B52F57208AEFED00BCA639 /* SNChatCell.swift */,
 				94B52F58208AEFED00BCA639 /* SNChatCell.xib */,
+				94E5826C208C4ADC0027F2EB /* SNUserCell.swift */,
 			);
 			path = TableViewCells;
 			sourceTree = "<group>";
@@ -344,7 +350,9 @@
 				94677A73208201D6008649D3 /* SNTabBarController.swift in Sources */,
 				94F613A92081E94100667A4A /* AppDelegate.swift in Sources */,
 				94B52F5F208B1CE900BCA639 /* SNChatViewModel.swift in Sources */,
+				94E5826D208C4ADC0027F2EB /* SNUserCell.swift in Sources */,
 				94B52F65208B808500BCA639 /* Int.swift in Sources */,
+				94E5826F208C66840027F2EB /* UIColor.swift in Sources */,
 				94B52F59208AEFED00BCA639 /* SNChatCell.swift in Sources */,
 				94B52F61208B34A500BCA639 /* Date.swift in Sources */,
 				944D1E3220879BF500135D35 /* SNAddressBookTableViewController.swift in Sources */,

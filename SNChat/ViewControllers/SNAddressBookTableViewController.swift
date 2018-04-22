@@ -15,7 +15,8 @@ class SNAddressBookTableViewController: UITableViewController {
         self.navigationItem.title = "通讯录"
         
         self.tableView!.separatorStyle = .none
-
+        self.tableView!.register(SNUserCell.self, forCellReuseIdentifier: SNUserCell.reuseIdentifier)
+        
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
@@ -28,24 +29,27 @@ class SNAddressBookTableViewController: UITableViewController {
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
+        return 5
     }
 
-    /*
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 46
+    }
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
-        // Configure the cell...
-
-        return cell
+        let cell = tableView.dequeueReusableCell(withIdentifier: SNUserCell.reuseIdentifier, for: indexPath) as? SNUserCell
+        
+        guard let user = cell else {
+            fatalError("Unexpected table view cell.")
+        }
+        user.avatar.image = UIImage(named: "logo")
+        user.name.text = "StoneN"
+        return user
     }
-    */
 
     /*
     // Override to support conditional editing of the table view.
